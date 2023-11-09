@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="title">
+            Balance Sheet
+        </div>
+        <div id="corp">
+            AcmeWidgetCorp
+        </div>
+        <div id="year">
+            <span>2019</span>
+            <span>2020</span>
+            <span>2021</span>
+        </div>
+        <div id="content">
+            <div class="item">
+                <div class="item-title">
+                    Assets
+                </div>
+                <div class="item-name">
+                    <span class="left">Cash</span><span class="right"><span>$25</span><span>$30</span><span class="last">$28</span></span>
+                </div>
+                <div class="describe">
+                    <em>This is the cash we currently have on hand.</em>
+                </div>
+                <div class="item-name">
+                    <span class="left">Checking</span><span class="right"><span>$54</span><span>$56</span><span class="last">$53</span></span>
+                </div>
+                <div class="describe">
+                    <em>Our primary transactional account.</em>
+                </div>
+                <div class="item-name">
+                    <span class="left">Savings</span><span class="right"><span>$500</span><span>$650</span><span class="last">$728</span></span>
+                </div>
+                <div class="describe">
+                    <em>Funds set aside for emergencies.</em>
+                </div>
+                <div class="item-name total">
+                    <span class="left">Total</span><span class="right"><span>$500</span><span>$650</span><span class="last">$728</span></span>
+                </div>
+                <div class="double-line"></div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    Liabilities
+                </div>
+                <div class="item-name">
+                    <span class="left">Loans</span><span class="right"><span>$500</span><span>$250</span><span class="last">$0</span></span>
+                </div>
+                <div class="describe">
+                    <em>The outstanding balance on our startup loan.</em>
+                </div>
+                <div class="item-name total">
+                    <span class="left">Total</span><span class="right"><span>$500</span><span>$650</span><span class="last">$728</span></span>
+                </div>
+                <div class="double-line"></div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    Net Worth
+                </div>
+                <div class="item-name total">
+                    <span class="left">Total</span><span class="right"><span>$500</span><span>$650</span><span class="last">$728</span></span>
+                </div>
+                <div class="double-line"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
