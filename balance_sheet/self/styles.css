@@ -18,6 +18,8 @@
     display: flex;
     justify-content: right;
     background-color: black;
+    position: sticky;
+    top: 0;
 }
 #year > span{
     display: block;
