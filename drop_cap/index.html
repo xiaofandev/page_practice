@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        h1 {
+            text-align: center;
+            font-size: 58px;
+            font-family: Georgia, Times, "Times New Roman", serif;
+            margin-bottom: .4em;
+        }
+        hr {
+            border-width: 3px;
+        }
+        .chapter {
+            overflow: hidden;
+            margin-top: 1.1em;
+        }
+        .chapter::before {
+            content: "”";
+            font-size: 25em;
+            float: left;
+            margin-right: .1em;
+            color: #bbb;
+            margin-top: -60px;
+        }
+        .chapter p::first-letter {
+            float: left;
+            font-size: 3em;
+            font-family: Georgia, Times, "Times New Roman", serif;
+            margin-top: -8px;
+        }
+        .chapter p::first-line {
+            text-transform: uppercase;
+            font-family: Georgia, Times, "Times New Roman", serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>A Study In Scarlet</h1>  
+    <hr>
+    <section class="chapter">  
+      <p>In the year 1878 I took my degree of Doctor of Medicine of the University of London, 
+and proceeded to Netley to go through the course prescribed for surgeons in the army. Having 
+completed my studies there, I was duly attached to the Fifth Northumberland Fusiliers as 
+Assistant Surgeon.</p>
+    </section>
+</body>
+</html>
