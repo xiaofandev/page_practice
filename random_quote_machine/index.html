@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
+    <style>
+        :root {
+            --theme-color: rgba(13, 110, 253);
+        }
+        body {
+            background-color: var(--theme-color);
+        }
+        #quote-box {
+            margin: 200px auto;
+            width: 500px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        #text {
+            font-size: 20px;
+            text-align: center;
+        }
+        #author {
+            text-align: right;
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+        .mb {
+            margin-bottom: 20px;
+        }
+        .text-color {
+            color: var(--theme-color);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="quote-box">
+            <div id="text" class="mb text-color"></div>
+            <div id="author" class="mb text-color"></div>
+            <div class="bottom">
+                <span id="tweet-quote"><a href="twitter.com/intent/tweet" target="_blank" class="btn btn-primary"><i class="fab fa-twitter"></i></a></span>
+                <span id="new-quote"><a href="#" class="btn btn-primary">Next</a></span>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        const quotes = [
+            {
+                quote: 'If everything was perfect,you would never learn,and you would never grow.',
+                author: 'Unknown'
+            },
+            {
+                quote: 'Be happy,but never satisfied.',
+                author: 'Unknown'
+            }, 
+            {
+                quote: 'You do not write your life with words.You write it with actions.',
+                author: 'Unknown'
+            }
+        ];
+
+        function changeQuote() {
+            const radomIndex = Math.floor(Math.random()*quotes.length);
+            const newQuote = quotes[radomIndex].quote;
+            const newQuoteAuthor = quotes[radomIndex].author;
+            $("#text").text(newQuote);
+            $("#author").text('—— '+newQuoteAuthor);
+        }
+
+        document.onload = changeQuote();
+        document.getElementById("new-quote").addEventListener("click", changeQuote);
+
+
+    </script>
+</body>
+</html>
