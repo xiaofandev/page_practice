@@ -75,8 +75,9 @@
             $("#author").text('—— '+newQuoteAuthor);
         }
 
-        document.onload = changeQuote();
-        document.getElementById("new-quote").addEventListener("click", changeQuote);
+        $(document).ready(changeQuote());
+
+        $("#new-quote").click(changeQuote);
 
 
     </script>
